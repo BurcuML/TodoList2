@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>To Do List</title>
 </head>
-<body>
-    <div class="container">
 
-        <input type="text" name="text" id="input-text">
-        <div class="btn"> 
-            <button type="button" class="button">
-                <span class="button_text">Add Item</span>
-                <span class="button_icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
-              </button>
-        </div>
-        <ul class="task-list">        
+<body>
+
+    <div class="container">    
+        <div class="tasks">
+        <ul class="task-input" id="task-output">
             <div class="checkbox-wrapper-10">
-            <input checked="" type="checkbox" id="cb5" class="tgl tgl-flip">
-            <label for="cb5" data-tg-on="Done!" data-tg-off="Nope" class="tgl-btn"></label>
-          </div>
+                <input checked="" type="checkbox" id="cb5" class="tgl tgl-flip">
+                <label for="cb5" data-tg-on="Done!" data-tg-off="Nope" class="tgl-btn"></label>
+            </div>
         </ul>
+        <button type="reset" id="reset">Delete</button>
     </div>
-    
+        <input type="text" name="text" id="input-text">
+        <div class="btn">
+            <button type="button" class="button" id="button" onclick="addTask()">
+                <span class="button_text">Add Item</span>
+                <span class="button_icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24"
+                        stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor"
+                        height="24" fill="none" class="svg">
+                        <line y2="19" y1="5" x2="12" x1="12"></line>
+                        <line y2="12" y1="12" x2="19" x1="5"></line>
+                    </svg></span>
+            </button>
+        </div>
+    </div>
+
     <script src="main.js"></script>
 </body>
+
 </html>

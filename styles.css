@@ -1,5 +1,5 @@
 body{
-    background-color: #f0f0f0;
+    background: linear-gradient(90deg, rgb(255, 238, 7) 10%, rgb(100, 0, 146) 100%);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -14,8 +14,11 @@ body{
 
 #input-text{
     font-size: 1rem;
+    text-align: center;
     width: 30%;
-    height: 30px;
+    height: 40px;
+    border: 0;
+    outline: 0;
     border-radius: 50px 15px; 
 }
 
@@ -57,7 +60,7 @@ body{
   
   .button .svg {
     width: 29px;
-    stroke: #fff;
+    stroke: #000;
   }
   
   .button:hover {
@@ -148,7 +151,7 @@ body{
   
   .checkbox-wrapper-10 .tgl-flip + .tgl-btn:after {
     content: attr(data-tg-on);
-    background: #e5ff9c;
+    background: #ffee07;
     transform: rotateY(-180deg);
   }
   
@@ -168,7 +171,7 @@ body{
   .checkbox-wrapper-10 .tgl-flip:checked + .tgl-btn:after {
     transform: rotateY(0);
     left: 0;
-    background: #fcff2d;
+    background: #ffee07;
     color: #000;
   }
   

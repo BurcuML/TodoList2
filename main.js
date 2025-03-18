@@ -1,9 +1,15 @@
 const btn = document.getElementById("button")
 const output = document.getElementById("task-output");
 const input = document.getElementById("input-text");
-const check = document.getElementById("cb5");
 const clear = document.getElementById("clear");
 
+
+// Enter tuşuna basıldığında addTask fonksiyonunu çağır
+input.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        addTask();
+    }
+});
 
 function addTask() {
     if (input.value === "") {

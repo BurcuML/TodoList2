@@ -10,8 +10,19 @@ function addTask() {
         return alert("Please enter a task");
     }
     const li = document.createElement("li");
+    const button = document.createElement("button");
+    button.textContent = "Delete";
+    button.classList.add("delete");
+    button.addEventListener("click", () => {
+        output.removeChild(li);
+    });
     li.textContent = input.value;
     output.appendChild(li);
+    li.appendChild(button);
     input.value = "";
     check.classList.toggle("visible")
+}
+
+function clearAll() {
+    output.innerHTML = "";
 }

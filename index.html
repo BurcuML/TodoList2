@@ -13,9 +13,9 @@
     <div class="container">    
         <div class="tasks">
         <ul class="task-output" id="task-output">
-
+          <button type="reset" id="reset">Delete</button>  
         </ul>
-        <button type="reset" id="reset">Delete</button>
+        
     </div>
 
         <input type="text" name="text" id="input-text">
@@ -29,6 +29,7 @@
                         <line y2="12" y1="12" x2="19" x1="5"></line>
                     </svg></span>
             </button>
+            <button class="clear" id="clear" type="reset" onclick="clearAll()">Delete All</button>
         </div>
     </div>
 

@@ -50,7 +50,6 @@ body {
 /* From Uiverse.io by andrew-demchenk0 */
 .button {
   position: relative;
-  left: 10px;
   width: 151px;
   height: 40px;
   cursor: pointer;
@@ -84,14 +83,21 @@ body {
   justify-content: center;
   border-radius: 15px;
 }
-
+.button_icon:hover{
+  background-color: #640092;
+  color: white;
+}
+.button_icon:hover .svg {
+  width: 29px;
+  stroke: #ffffff;
+}
 .button .svg {
   width: 29px;
   stroke: #000;
 }
 
 .button:hover {
-  background: #ffee07;
+  background: #640092;
 }
 
 .button:hover .button_text {
@@ -104,13 +110,40 @@ body {
 }
 
 .button:active .button_icon {
-  background-color: #ddce00;
+  background-color: #640092;
 }
 
 .button:active {
-  border: 1px solid #ffee07;
+  border: 1px solid #640092;
+
 }
 
 #reset{
   visibility: hidden;
+}
+.delete{
+  float: right;
+  background: #ffee0056 ;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+.clear{
+  margin-top: 15px;
+  width: 151px;
+  height: 40px;
+  background-color: #640092;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  cursor: pointer;
+}
+.clear:hover{
+  background-color: #ffea00;
+  color: black;
+  transform: rotate(360deg);
+  transition: 0.6s;
 }
